@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'outfit', sans-serif;
+}
+.scroll1{
+    background-color: #1c1d29;
+}
+.scroll2{
+    background-color: #A6A9CD;
+}
+.scroll3{
+    background-color: #757687;
+}
+.scroll4{
+    background-color: #2F1718;
+}
+.scroll5{
+    background-color: #5F4243;
+}
+.interface{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
