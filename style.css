@@ -3,20 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'outfit', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
-.scroll1{
-    background-color: #1c1d29;
-}
-.scroll2{
+
+.Habilidades{
     background-color: #A6A9CD;
 }
-.scroll3{
+.Projetos{
     background-color: #757687;
 }
-.scroll4{
+.Contatos{
     background-color: #2F1718;
 }
-.scroll5{
+.Links{
     background-color: #5F4243;
 }
 .interface{
@@ -27,11 +27,95 @@
 section{
     height: 100vh;
     scroll-snap-align: start;
-    display: flex;
     position: sticky;
-    top: 0;
-    left: 0;
+}
+.background{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-image: url(imagens/background.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    padding-top: 2rem;
+    align-items: center;
+    text-align: center;
+    gap: 10rem;
+}
+nav{
+    display: flex;
+    gap: 3rem;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+nav a{
+    color: #fff;
+    
+}
+nav a:hover{
+    color: #2ecc71;
+    transition: 0.3s all;
+}
+.logo{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid #2ecc71;
+    color: #2ecc71;
+    border-radius: 50%;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+button{
+    color: #2ecc71;
+    background: transparent;
+    border:  solid #2ecc71;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    width: 150px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #2ecc71;
     color: #fff;
+    transition: 0.5s;
+}
+.container-text{
+    padding: 150px 0 0 130px;
+}
+.txt h3{
+    color: #fff;
+    font-size: 15px;
+}
+.txt h1{
+    color: #fff;
+    margin-top: 10px;
+}
+.txt span{
+    color: #2ecc71;
+}
+.txt p{
+    color: #fff;
+    font-size: 10px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.redes-sociais a{
+    color: #2ecc71;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+.btn{
+    margin-top: 10px;
 }
